@@ -1,0 +1,159 @@
+{
+  "champion_model_name": "Random Forest",
+  "champion_metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "f1_weighted": 1.0,
+    "roc_auc_ovr": 1.0,
+    "confusion_matrix": [
+      [
+        119,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        81,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        170,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        265,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        65
+      ]
+    ],
+    "classification_report": {
+      "Normal": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 119.0
+      },
+      "Elevated": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 81.0
+      },
+      "Stage 1 Hypertension": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 170.0
+      },
+      "Stage 2 Hypertension": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "Hypertensive Crisis": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 65.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 700.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 700.0
+      }
+    }
+  },
+  "all_benchmarks": [
+    {
+      "model_name": "Random Forest",
+      "cv_macro_f1": 0.9977990197595832,
+      "cv_std": 0.002719094789473294,
+      "test_accuracy": 1.0,
+      "test_precision_macro": 1.0,
+      "test_recall_macro": 1.0,
+      "test_f1_macro": 1.0,
+      "test_f1_weighted": 1.0,
+      "test_roc_auc_ovr": 1.0
+    },
+    {
+      "model_name": "XGBoost",
+      "cv_macro_f1": 0.9992687599547064,
+      "cv_std": 0.0009783471869782851,
+      "test_accuracy": 1.0,
+      "test_precision_macro": 1.0,
+      "test_recall_macro": 1.0,
+      "test_f1_macro": 1.0,
+      "test_f1_weighted": 1.0,
+      "test_roc_auc_ovr": 1.0
+    },
+    {
+      "model_name": "LightGBM",
+      "cv_macro_f1": 0.9973523654949462,
+      "cv_std": 0.0024512926351450107,
+      "test_accuracy": 1.0,
+      "test_precision_macro": 1.0,
+      "test_recall_macro": 1.0,
+      "test_f1_macro": 1.0,
+      "test_f1_weighted": 1.0,
+      "test_roc_auc_ovr": 1.0
+    },
+    {
+      "model_name": "Support Vector Machine",
+      "cv_macro_f1": 0.8359030819723653,
+      "cv_std": 0.010046633116073612,
+      "test_accuracy": 0.8457142857142858,
+      "test_precision_macro": 0.8436484460154654,
+      "test_recall_macro": 0.8509305553108735,
+      "test_f1_macro": 0.8463786541853434,
+      "test_f1_weighted": 0.8472137347639218,
+      "test_roc_auc_ovr": 0.9774075150945102
+    },
+    {
+      "model_name": "Logistic Regression (Baseline)",
+      "cv_macro_f1": 0.8642235823867379,
+      "cv_std": 0.009925050354225706,
+      "test_accuracy": 0.8928571428571429,
+      "test_precision_macro": 0.8807035523806105,
+      "test_recall_macro": 0.9030651030503047,
+      "test_f1_macro": 0.8882933132617769,
+      "test_f1_weighted": 0.8944405308176827,
+      "test_roc_auc_ovr": 0.9827592064404171
+    }
+  ],
+  "dataset_size": 3500,
+  "test_size": 700,
+  "classes": [
+    "Normal",
+    "Elevated",
+    "Stage 1 Hypertension",
+    "Stage 2 Hypertension",
+    "Hypertensive Crisis"
+  ]
+}
